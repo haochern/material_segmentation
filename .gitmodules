@@ -1,0 +1,6 @@
+[submodule "SegFormer"]
+	path = SegFormer
+	url = git@github.com:haochern/SegFormer.git
+[submodule "segment-anything"]
+	path = segment-anything
+	url = git@github.com:facebookresearch/segment-anything.git
