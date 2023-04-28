@@ -12,19 +12,23 @@ For install submodules, please refer to the guidelines in [SegFormer](https://gi
 
 ## Train
 ```bash
-$ python3 SegFormer/tools/train.py SegFormer/local_configs/segformer/B1/segformer.b1.512x512.dms.160k.py
+python3 SegFormer/tools/train.py SegFormer/local_configs/segformer/B1/segformer.b1.512x512.dms.160k.py
 ```
 
-## Run
-Demo
+## Evaluation
+
+Download trained SegFormer weights
+([google drive](https://drive.google.com/file/d/1HDLwNOj5w2ML-8KWyc61Mu5TsHbULT-1/view?usp=sharing))
+
+Run Demo
 ```bash
-$ python3 image_demo.py <image.png> <segformer_config.py> <segformer.pth> <sam_vit_h.pth>
+python3 image_demo.py <image.png> <segformer_config.py> <segformer.pth> <sam_vit_h.pth>
 ```
 Preprocess RGBD data
 ```bash
-$ python3 rgbd_preprocess.py <data_dir> <segformer_config.py> <segformer.pth> <sam_vit_h.pth>
+python3 rgbd_preprocess.py <data_dir> <segformer_config.py> <segformer.pth> <sam_vit_h.pth>
 ```
 Visualize <data.npy> file
 ```bash
-$ python3 npy_reader.py <data_dir> <segformer_config.py> <segformer.pth>
+python3 npy_reader.py <data_dir> <segformer_config.py> <segformer.pth>
 ```
